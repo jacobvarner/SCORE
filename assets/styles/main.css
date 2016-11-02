@@ -1,3 +1,15 @@
 a.navbar-brand {
   padding: 10px 15px;
 }
+
+body {
+  padding-top: 70px;
+}
+
+img.main-logo {
+  padding: 20px 0px;
+}
+
+img.partner-logo {
+  padding: 20px;
+}
