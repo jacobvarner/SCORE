@@ -8,3 +8,46 @@ $background-grey: #eeeeee
   display: block
   width: 1200px
   margin: 0px auto
+  overflow: auto
+
+header
+  background: $dark-blue
+  height: 360px
+
+#header-logo
+  width: 640px
+  display: block
+  margin: 80px auto
+
+nav
+  display: block
+  width: 500px
+  margin: 0px auto
+  height: 60px
+  overflow: auto
+
+  ul
+    margin: 0
+    padding: 0
+    height: 60px
+    display: flex
+    list-style: none
+
+    li
+      font-family: "Roboto", sans-serif
+      font-size: 24px
+      font-weight: normal
+      padding: 15px 15px 17px
+      color: white
+
+      a, a:visited
+        color: white
+        text-decoration: none
+        display: block
+
+      a:hover, a:active
+        color: $orange
+
+    .active
+      padding: 15px 15px 12px
+      border-bottom: 5px solid $orange
