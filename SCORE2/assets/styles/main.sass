@@ -6,13 +6,14 @@ $background-grey: #eeeeee
 
 .wrapper
   display: block
-  width: 1200px
+  width: 1280px
   margin: 0px auto
   overflow: auto
 
 header
   background: $dark-blue
   height: 360px
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35)
 
 #header-logo
   width: 640px
@@ -51,3 +52,119 @@ nav
     .active
       padding: 15px 15px 12px
       border-bottom: 5px solid $orange
+
+#mission-statement
+  height: 200px
+  width: 1200px
+  display: block
+  margin: 40px auto
+
+  p
+    font-family: "Roboto", sans-serif
+    font-size: 30px
+    font-weight: normal
+    color: $text
+    margin: 5px
+    text-align: center
+    line-height: 36px
+
+.sub-heading
+  font-family: "Roboto", sans-serif
+  font-size: 48px
+  font-weight: bold
+  color: $orange
+  text-align: center
+  margin: 15px 0 10px
+
+#mailing-list
+  background: $background-grey
+  overflow: auto
+  height: 340px
+
+  form
+    width: 640px
+    display: block
+    margin: 0 auto
+
+    .mc-field-name
+      display: inline-block
+
+      input
+        height: 20px
+        width: 270px
+        border: 3px solid $dark-blue
+        padding: 10px
+        font-size: 24px
+        margin: 5px 0px 10px
+
+    .mc-field-name:nth-child(2)
+      margin-left: 40px
+
+    .mc-field-email
+
+      input
+        height: 20px
+        width: 610px
+        border: 3px solid $dark-blue
+        padding: 10px
+        font-size: 24px
+        margin: 5px 0px 10px
+
+    label
+      font-family: "Roboto", sans-serif
+      font-size: 24px
+      font-weight: normal
+      margin: 5px 0px 2px
+      color: $dark-blue
+
+      span
+        font-size: 18px
+        color: $text
+
+    input.button
+      width: 150px
+      height: 40px
+      background: $dark-blue
+      color: white
+      font-size: 24px
+      font-family: "Roboto", sans-serif
+      text-align: center
+      border: none
+      margin: -20px 0px 0px
+
+    input.button:hover
+      cursor: pointer
+
+#staff
+  width: 840px
+  display: block
+  margin: 40px auto
+  overflow: auto
+
+  .staff-member
+    width: 800px
+    display: block
+    margin: 20px auto
+    overflow: auto
+
+    .staff-member-photo
+      width: 200px
+      height: 200px
+      float: left
+      margin: 0 15px 0 0
+
+    .staff-member-name
+      font-family: "Roboto", sans-serif
+      font-size: 30px
+      font-weight: bold
+      color: $dark-blue
+      margin: 0 0 10px
+
+    .staff-member-about
+      font-family: "Open Sans", sans-serif
+      font-size: 14px
+      font-weight: normal
+      color: $text
+      line-height: 20px
+      margin: 0
+      text-align: justify
