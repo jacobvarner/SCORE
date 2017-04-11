@@ -27,6 +27,9 @@ header
   -webkit-transition: all 0.4s ease-in-out
   -moz-transition: all 0.4s ease-in-out
 
+  @media only screen and (max-width: 700px)
+    height: 25%
+
 #header-logo
   height: 140px
   display: block
@@ -36,17 +39,22 @@ header
   -moz-transition: all 0.4s ease-in-out
   z-index: 9
 
+  @media only screen and (max-width: 700px)
+    height: auto
+    width: 80%
+
 .shrink
   height: 60px
 
 #header-logo.shrink-logo
+  width: auto
   height: 40px
   margin: 0
   position: fixed
   top: 10px
   left: 40px
 
-nav
+nav#navigation
   display: block
   background: $dark-blue
   position: absolute
@@ -54,6 +62,14 @@ nav
   bottom: 0px
   left: 50%
   transform: translateX(-50%)
+
+  @media only screen and (max-width: 1030px)
+    right: 20px
+    left: auto
+    transform: none
+
+  @media only screen and (max-width: 790px)
+    display: none
 
   ul
     width: 500px
@@ -82,10 +98,60 @@ nav
       padding: 15px 15px 12px
       border-bottom: 5px solid $orange
 
+#menu-icon
+  display: none
+  position: fixed
+  right: 40px
+  top: 15px
+  height: 30px
+  cursor: pointer
+
+  @media only screen and (max-width: 790px)
+    display: block
+
+nav#mobile-navigation
+  display: none
+  background: $dark-blue
+  position: fixed
+  height: 250px
+  top: 60px
+  width: 100%
+
+  @media only screen and (min-width: 790px)
+    display: none
+
+  ul
+    list-style: none
+    position: absolute
+    right: 0px
+
+    li
+      font-family: "Roboto", sans-serif
+      font-size: 24px
+      font-weight: normal
+      padding: 7px 20px 9px
+      color: white
+      text-align: right
+
+      a, a:visited
+        color: white
+        text-decoration: none
+        display: block
+
+      a:hover, a:active
+        color: $orange
+
+    .active
+      padding: 7px 15px 9px
+      border-right: 5px solid $orange
+
 .spacer
   width: 100%
   display: block
   height: 360px
+
+  @media only screen and (max-width: 700px)
+    height: 220px
 
 #mission-statement
   height: 200px
