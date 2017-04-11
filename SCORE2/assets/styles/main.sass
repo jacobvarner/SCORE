@@ -110,15 +110,16 @@ nav#navigation
     display: block
 
 nav#mobile-navigation
-  display: none
+  display: block
   background: $dark-blue
   position: fixed
-  height: 250px
+  height: 0px
   top: 60px
   width: 100%
-
-  @media only screen and (min-width: 790px)
-    display: none
+  overflow: auto
+  /* animation magic */
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out
 
   ul
     list-style: none

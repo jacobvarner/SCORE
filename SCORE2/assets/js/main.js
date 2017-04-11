@@ -10,11 +10,11 @@ jQuery(document).ready(function ($) {
   });
 
   $("#menu-icon").click(function () {
-    if ($("#mobile-navigation").css("display") === "none") {
-      $("#mobile-navigation").css("display", "block");
+    if ($("#mobile-navigation").height() === 0) {
+      $("#mobile-navigation").height("250px");
       $("#menu-icon").attr("src", "assets/images/menu-icon-close.png");
     } else {
-      $("#mobile-navigation").css("display", "none");
+      $("#mobile-navigation").height("0px");
       $("#menu-icon").attr("src", "assets/images/menu-icon.png");
     }
   });
