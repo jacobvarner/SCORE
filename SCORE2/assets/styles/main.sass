@@ -4,9 +4,15 @@ $orange: #f58124
 $text: #666666
 $background-grey: #eeeeee
 
-.wrapper
+.wrapper-1280
   display: block
   width: 1280px
+  margin: 0px auto
+  overflow: auto
+
+.wrapper-640
+  display: block
+  width: 640px
   margin: 0px auto
   overflow: auto
 
@@ -14,18 +20,28 @@ header
   background: $dark-blue
   height: 360px
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35)
-  position: relative
+  position: fixed
   top: 0px
   width: 100%
+  /* animation magic */
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out
 
 #header-logo
-  width: 640px
+  height: 140px
   display: block
   margin: 80px auto
+  /* animation magic */
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out
+  z-index: 9
 
-#header-logo-small
+.shrink
+  height: 60px
+
+#header-logo.shrink-logo
   height: 40px
-  display: none
+  margin: 0
   position: fixed
   top: 10px
   left: 40px
@@ -33,11 +49,11 @@ header
 nav
   display: block
   background: $dark-blue
-  position: relative
+  position: absolute
   height: 60px
-  top: 0px
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 0px
+  left: 50%
+  transform: translateX(-50%)
 
   ul
     width: 500px
@@ -65,6 +81,11 @@ nav
     .active
       padding: 15px 15px 12px
       border-bottom: 5px solid $orange
+
+.spacer
+  width: 100%
+  display: block
+  height: 360px
 
 #mission-statement
   height: 200px
