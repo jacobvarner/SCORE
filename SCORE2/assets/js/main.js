@@ -3,9 +3,11 @@ jQuery(document).ready(function ($) {
   	if ($(document).scrollTop() > 100) {
   	  $("header").addClass("shrink");
       $("#header-logo").addClass("shrink-logo");
+      $("nav#navigation").addClass("right-adjust");
   	} else {
   	  $("header").removeClass("shrink");
       $("#header-logo").removeClass("shrink-logo");
+      $("nav#navigation").removeClass("right-adjust");
   	}
   });
 
