@@ -272,7 +272,7 @@ nav#mobile-navigation
       cursor: pointer
 
 #staff
-  width: 840px
+  width: 1200px
   display: block
   margin: 30px auto
   overflow: auto
@@ -281,7 +281,7 @@ nav#mobile-navigation
     width: 800px
 
   .staff-member
-    width: 800px
+    width: 1160px
     display: block
     margin: 40px auto
     overflow: auto
@@ -312,12 +312,16 @@ nav#mobile-navigation
 
     .staff-member-about
       font-family: "Open Sans", sans-serif
-      font-size: 14px
+      font-size: 16px
       font-weight: normal
       color: $text
-      line-height: 20px
+      line-height: 24px
       margin: 0
       text-align: left
+
+      @media only screen and (max-width: 1200px)
+        font-size: 14px
+        line-height: 20px
 
 footer
   width: 100%
