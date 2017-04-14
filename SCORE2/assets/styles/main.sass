@@ -6,6 +6,7 @@ $background-grey: #eeeeee
 
 header
   background: $dark-blue
+  z-index: 1
   height: 360px
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35)
   position: fixed
@@ -302,7 +303,7 @@ nav#mobile-navigation
       font-family: "Roboto", sans-serif
       text-align: center
       border: none
-      margin: -20px 0px 0px
+      margin: -20px 0px 10px
 
       @media only screen and (max-width: 1200px)
         width: 120px
@@ -321,6 +322,11 @@ nav#mobile-navigation
   @media only screen and (max-width: 1200px)
     width: 800px
 
+  @media only screen and (max-width: 800px)
+    width: auto
+    margin: 20px 0
+    padding: 0 20px
+
   .staff-member
     width: 1160px
     display: block
@@ -331,15 +337,30 @@ nav#mobile-navigation
       width: 760px
       margin: 30px auto
 
+    @media only screen and (max-width: 800px)
+      width: auto
+      margin: 30px 0
+
     .staff-member-photo
       width: 200px
       height: 200px
       float: left
       margin: 0 15px 5px 0
+      display: block
 
       @media only screen and (max-width: 1200px)
         width: 180px
         height: 180px
+
+      @media only screen and (max-width: 800px)
+        width: 160px
+        height: 160px
+
+      @media only screen and (max-width: 400px)
+        width: 200px
+        height: 200px
+        float: none
+        margin: 10px auto
 
     .staff-member-name
       font-family: "Roboto", sans-serif
@@ -350,6 +371,9 @@ nav#mobile-navigation
 
       @media only screen and (max-width: 1200px)
         font-size: 24px
+
+      @media only screen and (max-width: 400px)
+        text-align: center
 
     .staff-member-about
       font-family: "Open Sans", sans-serif
@@ -377,3 +401,8 @@ footer
     font-family: "Open Sans", sans-serif
     font-size: 16px
     margin: 20px
+
+    @media only screen and (max-width: 420px)
+      font-size: 12px
+      line-height: 16px
+      margin: 25px 10px
