@@ -1,7 +1,10 @@
 /* Color Variables */
+$blue: #496e9c
 $dark-blue: #03244d
 $orange: #f58124
+$dark-orange: #dd550c
 $text: #666666
+$dark-text: #333333
 $background-grey: #eeeeee
 
 header
@@ -387,6 +390,171 @@ nav#mobile-navigation
       @media only screen and (max-width: 1200px)
         font-size: 14px
         line-height: 20px
+
+#events-key
+  display: block
+  width: 600px
+  margin: 20px auto
+  font-size: 0
+
+  @media only screen and (max-width: 620px)
+    width: 300px
+
+  .events-key-item
+    width: 150px
+    display: inline-block
+    height: 40px
+    margin: 5px 0
+    padding: 0px
+
+    .color-square
+      display: inline-block
+      float: left
+      width: 40px
+      height: 40px
+      margin: 0 10px 0 0
+      padding: 0px
+
+    .key-caption
+      font-family: 'Roboto', sans-serif
+      font-size: 16px
+      font-weight: normal
+      display: block
+      float: left
+      width: 90px
+      height: 40px
+      line-height: 20px
+      margin: 0 10px 0 0
+      padding: 0
+
+.orange-1
+  background: $orange
+
+.orange-2
+  background: $dark-orange
+
+.blue-1
+  background: $blue
+
+.blue-2
+  background: $dark-blue
+
+.event-item
+  display: block
+  width: 800px
+  height: 150px
+  margin: 20px auto
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35)
+  background: $background-grey
+  overflow: auto
+
+  @media only screen and (max-width: 820px)
+    width: auto
+    margin: 20px 10px
+    height: auto
+
+  .event-date
+    display: block
+    width: 200px
+    height: 150px
+    float: left
+
+    @media only screen and (max-width: 820px)
+      width: 100%
+      float: none
+      height: 40px
+
+    .month
+      font-family: 'Roboto', sans-serif
+      font-size: 28px
+      font-weight: bold
+      text-align: center
+      margin: 25px 0 5px
+      color: white
+
+      @media only screen and (max-width: 820px)
+        font-size: 24px
+        text-align: left
+        line-height: 40px
+        margin: 0px 0px 0px 10px
+        display: inline
+
+    .date
+      font-family: 'Roboto', sans-serif
+      font-size: 60px
+      font-weight: bold
+      text-align: center
+      margin: 5px 0 15px
+      color: white
+
+      @media only screen and (max-width: 820px)
+        font-size: 24px
+        text-align: left
+        line-height: 40px
+        margin: 0px 10px 0px 5px
+        display: inline
+
+  .event-info
+    display: block
+    float: left
+    width: 580px
+    height: 130px
+    padding: 10px
+
+    @media only screen and (max-width: 820px)
+      float: none
+      width: auto
+      height: auto
+
+    .event-title
+      font-family: 'Roboto', sans-serif
+      font-size: 24px
+      font-weight: bold
+      color: $dark-blue
+      padding: 0px
+      margin: 0px 0px 10px
+
+      @media only screen and (max-width: 540px)
+        font-size: 20px
+
+    .event-location
+      font-family: 'Roboto', sans-serif
+      font-size: 18px
+      font-weight: bold
+      color: $dark-text
+      padding: 0px
+      margin: 0px 0px 10px
+
+      @media only screen and (max-width: 540px)
+        font-size: 16px
+
+    .event-audience
+      font-family: 'Roboto', sans-serif
+      font-size: 18px
+      font-weight: normal
+      color: white
+      background: $dark-text
+      width: 140px
+      height: 40px
+      display: inline-block
+      text-align: center
+      margin: 0 5px 0 0
+      line-height: 40px
+
+    .event-button
+      display: inline-block
+      font-family: 'Roboto', sans-serif
+      font-size: 18px
+      font-weight: normal
+      color: white
+      text-decoration: none
+      text-align: center
+      line-height: 40px
+      cursor: pointer
+      width: 100px
+      height: 40px
+      background: $text
+      margin: 0 5px 0 0
 
 footer
   width: 100%
