@@ -1,0 +1,38 @@
+a.navbar-brand {
+  padding: 10px 15px;
+}
+
+body {
+  padding-top: 70px;
+}
+
+img.main-logo {
+  padding: 40px 0px;
+}
+
+img.partner-logo {
+  padding: 20px;
+}
+
+p#mission-statement {
+  padding: 30px 30px;
+}
+
+hr {
+  padding-bottom: 30px;
+}
+
+img.staff-image {
+  float: left;
+  clear: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+div.staff-about {
+  padding-bottom: 30px;
+}
+
+div.staff-about>h3 {
+  margin-top: 0px;
+}
