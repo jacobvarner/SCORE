@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
 
   $("#menu-icon").click(function () {
     if ($("#mobile-navigation").height() === 0) {
-      $("#mobile-navigation").height("250px");
+      $("#mobile-navigation").height("200px");
       $("#menu-icon").attr("src", "assets/images/menu-icon-close.png");
     } else {
       $("#mobile-navigation").height("0px");
